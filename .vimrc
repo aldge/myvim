@@ -52,9 +52,10 @@ map  <F2>  :call OpenTaglist()<CR>
 "关闭当前Buffer
 map  <F4>  :call CloseBufferByAldge()<CR> 
 "切换到下一个Buffer
-map  <F5>  :bn<CR>
+map  <F5>  :bp<CR>
 "切换到上一个Buffer
-map  <F6>  :call OpenProject()<CR>
+map  <F6>  :bn<CR>
+"map  <F6>  :call OpenProject()<CR>
 "map  <F6>  <Plug>ToggleProject<CR>
 "map  <F8>  :call OpenWimmanger()<CR>
 
