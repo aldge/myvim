@@ -10,6 +10,7 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 " original repos on github
+Bundle 'AutoComplPop'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tomasr/molokai'
 Bundle 'Lokaltog/vim-powerline'
