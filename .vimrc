@@ -70,8 +70,8 @@ nmap <silent> <leader>wf :w!<cr>
 "Fast quiting
 nmap <silent> <leader>qw :wq<cr>
 nmap <silent> <leader>qf :q!<cr>
-"nmap <silent> <leader>qq :call QuitVimByAldge()<cr>
-nmap <silent> <leader>qq :call CloseBufferByAldge()<cr>
+nmap <silent> <leader>qq :call QuitVimByAldge()<cr>
+"nmap <silent> <leader>qq :call CloseBufferByAldge()<cr>
 nmap <silent> <leader>qa :qa<cr>
 
 "Fast reloading of the .vimrc
