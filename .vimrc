@@ -48,13 +48,13 @@ set guifont=Consolas:h18
 map  <F1>  :NERDTreeToggle <CR>
 "打开taglist
 map  <F2>  :call OpenTaglist()<CR>
-"nnoremap <silent> <F3> :Grep<CR>
+nnoremap <silent> <F3> :Grep -R <CR>
 "关闭当前Buffer
 map  <F4>  :call CloseBufferByAldge()<CR> 
 "切换到下一个Buffer
 map  <F5>  :bp<CR>
 "切换到上一个Buffer
-map  <F6>  :bn<CR>
+map <>
 "map  <F6>  :call OpenProject()<CR>
 "map  <F6>  <Plug>ToggleProject<CR>
 "map  <F8>  :call OpenWimmanger()<CR>

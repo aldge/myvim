@@ -14,6 +14,7 @@ Bundle 'AutoComplPop'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tomasr/molokai'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'grep.vim'
 "Bundle 'tpope/vim-fugitive'
 "Bundle 'Lokaltog/vim-easymotion'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
