@@ -74,6 +74,9 @@ nmap <silent> <leader>qq :call QuitVimByAldge()<cr>
 "nmap <silent> <leader>qq :call CloseBufferByAldge()<cr>
 nmap <silent> <leader>qa :qa<cr>
 
+nmap <silent> <leader>fb :FufBuffer<cr>
+nmap <silent> <leader>ff :FufCoverageFile<cr>
+
 "Fast reloading of the .vimrc
 map <silent> <leader>s :source ~/.vimrc<cr>
 "Fast editing of .vimrc
