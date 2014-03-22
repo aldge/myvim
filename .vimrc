@@ -73,8 +73,9 @@ nmap <silent> <leader>qf :q!<cr>
 nmap <silent> <leader>qq :call QuitVimByAldge()<cr>
 "nmap <silent> <leader>qq :call CloseBufferByAldge()<cr>
 nmap <silent> <leader>qa :qa<cr>
-
-nmap <silent> <leader>fb :FufBuffer<cr>
+"FuzzyFinder Buffer mode
+nmap <silent> <leader>bb :FufBuffer<cr>
+"FuzzyFinder Coverage-File mode
 nmap <silent> <leader>ff :FufCoverageFile<cr>
 
 "Fast reloading of the .vimrc
