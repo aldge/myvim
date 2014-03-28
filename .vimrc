@@ -38,8 +38,7 @@ set guifont=Consolas:h18
 "map <leader>te :tabedit
 "map <leader>tc :tabclose<cr>
 "map <leader>tm :tabmove
-"try
-"  set switchbuf=useopen
+"try "  set switchbuf=useopen
 "  set stal=1
 "catch
 "endtry
@@ -55,6 +54,7 @@ map  <F4>  :call CloseBufferByAldge()<CR>
 map  <F5>  :bp<CR>
 "切换到上一个Buffer
 map <F6>  :bn <CR>
+map <F7>  :call DeleteAllBuffersInWindow()<CR>
 "map  <F6>  :call OpenProject()<CR>
 "map  <F6>  <Plug>ToggleProject<CR>
 "map  <F8>  :call OpenWimmanger()<CR>
