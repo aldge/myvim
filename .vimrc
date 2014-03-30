@@ -1,7 +1,5 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" This vimrc is based on the vimrc by Amix, URL:
-"         http://www.amix.dk/vim/vimrc.html
-" Maintainer: Easwy
+" Maintainer: zhaohuan
 " Version: 0.1
 " Last Change: 2011/07/16 
 " User:zhaohuan
@@ -51,13 +49,10 @@ map  <F3> :Grep -R <CR>
 "关闭当前Buffer
 map  <F4>  :call CloseBufferByAldge()<CR> 
 "切换到下一个Buffer
-map  <F5>  :bp<CR>
+"map  <F5>  :bp<CR>
 "切换到上一个Buffer
-map <F6>  :bn <CR>
-map <F7>  :call DeleteAllBuffersInWindow()<CR>
-"map  <F6>  :call OpenProject()<CR>
-"map  <F6>  <Plug>ToggleProject<CR>
-"map  <F8>  :call OpenWimmanger()<CR>
+"map <F6>  :bn <CR>
+"map <F7>  :call DeleteAllBuffersInWindow()<CR>
 
 "nmap <silent> <Leader>P <Plug>ToggleProject
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -68,11 +63,10 @@ nmap <silent> <leader>ww :w<cr>
 nmap <silent> <leader>wf :w!<cr>
 
 "Fast quiting
-nmap <silent> <leader>qw :wq<cr>
-nmap <silent> <leader>qf :q!<cr>
+nmap <silent> <leader>nn :bn<cr>
+nmap <silent> <leader>pp :bp<cr>
+nmap <silent> <leader>cc :call DeleteAllBuffersInWindow()<cr>
 nmap <silent> <leader>qq :call QuitVimByAldge()<cr>
-"nmap <silent> <leader>qq :call CloseBufferByAldge()<cr>
-nmap <silent> <leader>qa :qa<cr>
 "FuzzyFinder Buffer mode
 nmap <silent> <leader>bb :FufBuffer<cr>
 "FuzzyFinder Coverage-File mode
