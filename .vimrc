@@ -71,6 +71,7 @@ nmap <silent> <leader>qq :call QuitVimByAldge()<cr>
 nmap <silent> <leader>bb :FufBuffer<cr>
 "FuzzyFinder Coverage-File mode
 nmap <silent> <leader>ff :FufCoverageFile<cr>
+nmap <silent> <leader>js :call g:Jsbeautify() <cr>
 
 "Fast reloading of the .vimrc
 map <silent> <leader>s :source ~/.vimrc<cr>
