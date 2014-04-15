@@ -102,6 +102,14 @@ let showmarks_hlline_upper = 1
 """"""""""""""""""""""""""""""
 nmap <silent> <leader>mk :MarksBrowser<cr>
 
+
+let g:indent_guides_auto_colors = 1
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
+
+"hi IndentGuidesOdd  guibg=red   ctermbg=3
+"hi IndentGuidesEven guibg=green ctermbg=4
+
 """"""""""""""""""""""""""""""
 " minibuffer setting
 """"""""""""""""""""""""""""""
