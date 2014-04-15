@@ -71,7 +71,7 @@ nmap <silent> <leader>qq :call QuitVimByAldge()<cr>
 nmap <silent> <leader>bb :FufBuffer<cr>
 "FuzzyFinder Coverage-File mode
 nmap <silent> <leader>ff :FufCoverageFile<cr>
-nmap <silent> <leader>js :call g:Jsbeautify() <cr>
+nmap <silent> <leader>jj :call g:Jsbeautify() <cr>
 
 "Fast reloading of the .vimrc
 map <silent> <leader>s :source ~/.vimrc<cr>
@@ -172,7 +172,7 @@ colorscheme molokai
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set smartindent "开启新行时使用智能自动缩进  
 "autoindent（自动缩进，即每行的缩进值与上一行相等；使用noautoindent取消设置）  
-set tabstop=8  "tabstop（制表符的宽度,只是把制表符的缩进量给改了，还是一个tab，所以跨平台时依旧会出现不一致）  
+set tabstop=4  "tabstop（制表符的宽度,只是把制表符的缩进量给改了，还是一个tab，所以跨平台时依旧会出现不一致）  
 set softtabstop=4  "softtabstop（软制表符宽度，设置为非零数值后使用Tab键和Backspace时光标移动的格数等于该数值，但实际插入的字符仍受tabstop和expandtab控制）  
 set shiftwidth=4   "shiftwidth（缩进的空格数）  
 set expandtab  "expandtab（是否在缩进和遇到Tab键时使用空格替代，主要是保证跨平台时缩进的一致性；使用noexpandtab取消设置）  
