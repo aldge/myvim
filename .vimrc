@@ -167,6 +167,7 @@ let g:AutoOpenWinManager = 1
 set t_Co=256 " 256 colors in terminal
 let g:molokai_original = 1
 colorscheme molokai 
+"colorscheme desert256
 "hi LineNr
 
 "hi Normal                 guifg=white  guibg=black
