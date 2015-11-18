@@ -1,3 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/Users/Apple/.vim'
+let g:netrw_dirhist_2='/home/work/odp/app/mindbox'
+let g:netrw_dirhist_3='/home/work/odp/app/apkdispatch/models/service/page/getapk'
+let g:netrw_dirhist_4='/home/work/.subversion/auth/svn.ssl.client-passphrase'
