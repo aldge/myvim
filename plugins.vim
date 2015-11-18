@@ -17,6 +17,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'grep.vim'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
+Bundle "myusuf3/numbers.vim"
 "Bundle 'jsbeautify'
 Bundle 'nathanaelkane/vim-indent-guides'
 "Bundle 'desert256.vim'
