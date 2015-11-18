@@ -45,7 +45,8 @@ set guifont=Consolas:h18
 map  <F1>  :NERDTreeToggle <CR>
 "打开taglist
 map  <F2>  :call OpenTaglist()<CR>
-map  <F3> :Grep -R <CR>
+map  <F3> :call NumbersToggle()<cr>
+"map  <F3> :Grep -R <CR>
 "关闭当前Buffer
 map  <F4>  :call CloseBufferByAldge()<CR> 
 "切换到下一个Buffer
