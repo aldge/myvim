@@ -15,6 +15,10 @@ syntax enable
 let mapleader = ","
 let g:mapleader = ","
 set guifont=Consolas:h18
+"Solve Ubuntu Chinese Charset
+set fileencodings=UTF-8
+set termencoding=UTF-8
+set encoding=UTF-8
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Moving around and tabs
@@ -233,5 +237,5 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 let g:SuperTabRetainCompletionType=2
 let g:SuperTabDefaultCompletionType="<C-X><C-O>"
 
-
-
+au BufWinLeave * silent mkview
+au BufWinEnter * silent loadview
