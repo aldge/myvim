@@ -237,5 +237,5 @@ autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 let g:SuperTabRetainCompletionType=2
 let g:SuperTabDefaultCompletionType="<C-X><C-O>"
 
-au BufWinLeave * silent mkview
-au BufWinEnter * silent loadview
+"au BufWinLeave * silent mkview
+"au BufWinEnter * silent loadview
