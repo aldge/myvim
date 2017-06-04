@@ -47,14 +47,16 @@ function! indent_guides#enable()
   for l:level in range(s:start_level, s:indent_levels)
     let l:group = 'IndentGuides' . ((l:level % 2 == 0) ? 'Even' : 'Odd')
     let l:column_start = (l:level - 1) * s:indent_size + 1
-    let l:soft_pattern = indent_guides#indent_highlight_pattern(g:indent_guides_soft_pattern, l:column_start, s:guide_size)
-    let l:hard_pattern = indent_guides#indent_highlight_pattern('\t', l:column_start, s:indent_size)
 
     " define the higlight patterns and add to matches list
     if g:indent_guides_space_guides
+      let l:soft_pattern = indent_guides#indent_highlight_pattern(g:indent_guides_soft_pattern, l:column_start, s:guide_size)
       call add(w:indent_guides_matches, matchadd(l:group, l:soft_pattern))
     end
-    call add(w:indent_guides_matches, matchadd(l:group, l:hard_pattern))
+    if g:indent_guides_tab_guides
+      let l:hard_pattern = indent_guides#indent_highlight_pattern('\t', l:column_start, s:indent_size)
+      call add(w:indent_guides_matches, matchadd(l:group, l:hard_pattern))
+    end
   endfor
 endfunction
 
@@ -91,7 +93,7 @@ endfunction
 "
 function! indent_guides#highlight_colors()
   if s:auto_colors
-    if has('gui_running')
+    if has('gui_running') || has('nvim')
       call indent_guides#gui_highlight_colors()
     else
       call indent_guides#basic_highlight_colors()
@@ -180,7 +182,11 @@ endfunction
 " plugin is enabled.
 "
 function! indent_guides#init_script_vars()
-  let s:indent_size = &l:shiftwidth
+  if &l:shiftwidth > 0 && &l:expandtab
+    let s:indent_size = &l:shiftwidth
+  else
+    let s:indent_size = &l:tabstop
+  endif
   let s:guide_size  = indent_guides#calculate_guide_size()
   let s:hi_normal   = indent_guides#capture_highlight('Normal')
 

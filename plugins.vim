@@ -1,25 +1,50 @@
 set nocompatible               " be iMproved
 filetype off                   " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " required! 
-Bundle 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'fatih/vim-go'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tomasr/molokai'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'grep.vim'
+Plugin 'L9'
+Plugin 'FuzzyFinder'
+Plugin 'myusuf3/numbers.vim'
+Plugin 'nathanaelkane/vim-indent-guides'
 
+" Brief help
+" " :PluginList       - lists configured plugins
+" " :PluginInstall    - installs plugins; append `!` to update or just
+" :PluginUpdate
+" " :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" " :PluginClean      - confirms removal of unused plugins; append `!` to
+" auto-approve removal
+" "
+" " see :h vundle for more details or wiki for FAQ
+" " Put your non-Plugin stuff after this line
+
+"set rtp+=~/.vim/bundle/vundle/
+"call vundle#rc()
+
+"Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 " original repos on github
-Bundle 'AutoComplPop'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tomasr/molokai'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'grep.vim'
-Bundle 'L9'
-Bundle 'FuzzyFinder'
-Bundle "myusuf3/numbers.vim"
+"Bundle 'AutoComplPop'
+"Bundle 'scrooloose/nerdtree'
+"Bundle 'tomasr/molokai'
+"Bundle 'Lokaltog/vim-powerline'
+"Bundle 'grep.vim'
+"Bundle 'L9'
+"Bundle 'FuzzyFinder'
+"Bundle 'myusuf3/numbers.vim'
+"Bundle 'nathanaelkane/vim-indent-guides'
 "Bundle 'jsbeautify'
-Bundle 'nathanaelkane/vim-indent-guides'
 "Bundle 'desert256.vim'
 "Bundle 'functionlist.vim'
 "Bundle 'tpope/vim-fugitive'
@@ -32,7 +57,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 "Bundle 'FuzzyFinder'
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
-
+call vundle#end()
 filetype plugin indent on     " required!
 " Brief help
 " :BundleList          - list configured bundles

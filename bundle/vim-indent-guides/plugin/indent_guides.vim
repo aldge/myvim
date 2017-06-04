@@ -1,6 +1,11 @@
 " Author:   Nate Kane <nathanaelkane AT gmail DOT com>
 " Homepage: http://github.com/nathanaelkane/vim-indent-guides
 
+" Do not load if vim is too old
+if (v:version == 701 && !exists('*matchadd')) || (v:version < 701)
+  finish
+endif
+
 if exists('g:loaded_indent_guides') || &cp
   finish
 endif
@@ -53,6 +58,7 @@ call s:InitVariable('g:indent_guides_start_level', 1)
 call s:InitVariable('g:indent_guides_enable_on_vim_startup', 0)
 call s:InitVariable('g:indent_guides_debug', 0)
 call s:InitVariable('g:indent_guides_space_guides', 1)
+call s:InitVariable('g:indent_guides_tab_guides', 1)
 call s:InitVariable('g:indent_guides_soft_pattern', '\s')
 call s:InitVariable('g:indent_guides_default_mapping', 1)
 
